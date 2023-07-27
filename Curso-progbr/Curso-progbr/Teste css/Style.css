@@ -1,0 +1,29 @@
+p{
+    color: rgb(223, 15, 15);
+}
+
+/* # tag para o id */
+
+#paragrafo1{
+    color:white;
+    background-color: #FF482852;
+}
+
+/* . tag para a tag "class" (a tag "id" tem maior prioridade que tag "class"*/
+
+.fundo-azul{
+    background-color: darkgray;
+}
+
+.texto-amarelo{
+    color: rgb(18, 15, 59);
+}
+
+/* Quanto mais específico maior a prioridade */ 
+
+/* posicionamento é o id de uma tag div para posicionar o quadrado (rgb(34, 7, 59)*/
+.posicionamento{
+    width: 800px;
+    height: 75px;
+    background-color: rgb(34, 7, 59);
+}
