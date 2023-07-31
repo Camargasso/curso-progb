@@ -1,29 +1,76 @@
-p{
-    color: rgb(223, 15, 15);
+p {
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#titulo {
+    color: azure;
+    height: 65px;
+    width: 2000px;
+    background-color: rgba(0, 0, 0, 0.562);
+    position: fixed;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* # tag para o id */
 
-#paragrafo1{
-    color:white;
+#arara2 {
+    width: 500px;
+}
+
+/* font-size=tamanho da fonte pode ser informada através de px(pixels)
+ em(que é relativa ao tamanho que ela deveria ter / tamanho variável) */
+
+/* tag "rem" tamanho em relação ao HTML  */
+
+#p2 {
+    background-color: rgb(51, 38, 88);
+    color: rgb(208, 208, 216);
+    font-size: 25px;
+}
+
+#paragrafo1 {
+    color: white;
     background-color: #FF482852;
 }
 
 /* . tag para a tag "class" (a tag "id" tem maior prioridade que tag "class"*/
 
-.fundo-azul{
-    background-color: darkgray;
+.fundo-claro {
+    background: linear-gradient(to right, azure 25%, blue, purple);
 }
 
-.texto-amarelo{
+/*Propriedades para backgorund gradiante
+90deg= 90 graus / deg=graus  
+to left= para a aesquerda 
+to right= para a direita 
+to top= para cima 
+bottom= para baixo*/
+
+.texto-amarelo {
     color: rgb(18, 15, 59);
 }
 
-/* Quanto mais específico maior a prioridade */ 
+/* Quanto mais específico maior a prioridade */
 
-/* posicionamento é o id de uma tag div para posicionar o quadrado (rgb(34, 7, 59)*/
-.posicionamento{
+/* posicionamento é o id de uma tag div para posicionar o quadrado (rgb(34, 7, 59)*/    
+
+.posicionamento {
     width: 800px;
     height: 75px;
     background-color: rgb(34, 7, 59);
 }
+
+#ararazul {
+    width: 600px;
+    height: 400px;
+    background-image: url('../Imagens/ararazul.webp');
+}
+
+body {
+
+    background-image: url('../Imagens/background.jpg');
+    background-size: cover;
+}
+
+/* vw= viewport que adapta a estrutura do que foi aplicada de acordo com o tamanho da janela  */
