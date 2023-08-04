@@ -20,7 +20,13 @@ ela funciona caso a primeira fonte não consiga ser exibida */
 /* # tag para o id */
 
 #arara2 {
-    width: 500px;
+    background-image: url('../Imagens/arara\ encarando.jpg');
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    width: 600px;
+    height: 400px;
 }
 
 /* font-size=tamanho da fonte pode ser informada através de px(pixels)
@@ -32,8 +38,16 @@ ela funciona caso a primeira fonte não consiga ser exibida */
     background-color: rgb(51, 38, 88);
     color: rgb(208, 208, 216);
     font-size: 25px;
-    margin-left: 250px;   
+    margin-left: 250px;
 }
+
+/* "margin" é usada para definir o espaçamento externo de um elemento em relação aos elementos 
+vizinhos. Em outras palavras, ela controla a quantidade de espaço em branco que deve ser 
+deixada ao redor do elemento, criando um espaço vazio entre o elemento e os outros elementos 
+próximos. */
+
+/* "padding" é usada para definir o espaçamento interno de um elemento HTML. Ela controla a 
+quantidade de espaço vazio que deve existir entre o conteúdo do elemento e suas bordas internas. */
 
 #paragrafo1 {
     color: white;
@@ -59,7 +73,7 @@ bottom= para baixo*/
 
 /* Quanto mais específico maior a prioridade */
 
-/* posicionamento é o id de uma tag div para posicionar o quadrado (rgb(34, 7, 59)*/ 
+/* posicionamento é o id de uma tag div para posicionar o quadrado (rgb(34, 7, 59)*/
 
 /* para acrescentar uma borda utilizar tag "border" em seguida e outras tag para alterar suas características  */
 
@@ -76,6 +90,8 @@ bottom= para baixo*/
 #ararazul {
     width: 600px;
     height: 400px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: url('../Imagens/ararazul.webp');
 }
 
@@ -87,3 +103,44 @@ body {
 
 /* vw= viewport que adapta a estrutura do que foi aplicada de acordo com o tamanho da janela  */
 
+/* Fazer uma box com a tag overflow= scroll */
+
+#pteste {
+    background-color: rgba(169, 169, 169, 0.466);
+    width: 300px;
+    height: 300px;
+    overflow-x: hidden;
+}
+
+/* overflow em CSS é utilizada para controlar o comportamento do conteúdo dentro de um elemento, 
+quando esse conteúdo é maior do que o espaço disponível para exibi-lo. Em outras palavras, ela 
+define como o conteúdo que excede as dimensões do elemento deve ser tratado. */
+
+/* Como exemplpo acima que foi ocultado a barra de rolagem para o eixo X utilizando o scroll somente
+no eixo Y  */
+
+/* Tag "a:" você consegue mudar propriedades dos link como ex/ utilizando a tag "visited" ou 
+ "hover" */
+
+#linkte {
+    text-decoration: none;
+    color: azure;
+    background-color: cornflowerblue;
+    padding: 15px;
+}
+
+#linkte:hover {
+    padding: 30px;
+}
+
+#Características {
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 300px;
+    height: 300px;
+    overflow-x: hidden;
+    list-style-image: url('../Imagens/arara\ icon.png');
+}
+
+/* tag (cursor:) para aplicar alterações no cursor de propiedades desejadas aplicada dentro 
+de alguma tag*/
