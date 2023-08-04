@@ -20,8 +20,13 @@ ela funciona caso a primeira fonte não consiga ser exibida */
 /* # tag para o id */
 
 #arara2 {
+    background-image: url('../Imagens/arara\ encarando.jpg');
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: 100px;
     margin-bottom: 30px;
-    width: 500px;
+    width: 600px;
+    height: 400px;
 }
 
 /* font-size=tamanho da fonte pode ser informada através de px(pixels)
@@ -33,7 +38,7 @@ ela funciona caso a primeira fonte não consiga ser exibida */
     background-color: rgb(51, 38, 88);
     color: rgb(208, 208, 216);
     font-size: 25px;
-    margin-left: 250px;  
+    margin-left: 250px;
 }
 
 /* "margin" é usada para definir o espaçamento externo de um elemento em relação aos elementos 
@@ -68,7 +73,7 @@ bottom= para baixo*/
 
 /* Quanto mais específico maior a prioridade */
 
-/* posicionamento é o id de uma tag div para posicionar o quadrado (rgb(34, 7, 59)*/    
+/* posicionamento é o id de uma tag div para posicionar o quadrado (rgb(34, 7, 59)*/
 
 /* para acrescentar uma borda utilizar tag "border" em seguida e outras tag para alterar suas características  */
 
@@ -100,12 +105,13 @@ body {
 
 /* Fazer uma box com a tag overflow= scroll */
 
-#pteste{
-background-color: rgba(169, 169, 169, 0.466);
-width: 300px;
-height: 300px;
-overflow-x: hidden ;
+#pteste {
+    background-color: rgba(169, 169, 169, 0.466);
+    width: 300px;
+    height: 300px;
+    overflow-x: hidden;
 }
+
 /* overflow em CSS é utilizada para controlar o comportamento do conteúdo dentro de um elemento, 
 quando esse conteúdo é maior do que o espaço disponível para exibi-lo. Em outras palavras, ela 
 define como o conteúdo que excede as dimensões do elemento deve ser tratado. */
@@ -113,20 +119,28 @@ define como o conteúdo que excede as dimensões do elemento deve ser tratado. *
 /* Como exemplpo acima que foi ocultado a barra de rolagem para o eixo X utilizando o scroll somente
 no eixo Y  */
 
-/* #link{
-    background-color: darkblue;
-    width: 150px;
-    padding: 15px;  
-} */
- /* Tag "a:" você consegue mudar propriedades dos link como ex/ utilizando a tag "visited" ou 
+/* Tag "a:" você consegue mudar propriedades dos link como ex/ utilizando a tag "visited" ou 
  "hover" */
-  
-#linkte{
-text-decoration: none;
-color: azure;
-background-color: cornflowerblue;
-padding: 15px;
+
+#linkte {
+    text-decoration: none;
+    color: azure;
+    background-color: cornflowerblue;
+    padding: 15px;
 }
-#linkte:hover{
+
+#linkte:hover {
     padding: 30px;
 }
+
+#Características {
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 300px;
+    height: 300px;
+    overflow-x: hidden;
+    list-style-image: url('../Imagens/arara\ icon.png');
+}
+
+/* tag (cursor:) para aplicar alterações no cursor de propiedades desejadas aplicada dentro 
+de alguma tag*/
