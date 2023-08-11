@@ -1,3 +1,4 @@
+
 p {
     color: rgb(255, 255, 255);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -9,11 +10,15 @@ ela funciona caso a primeira fonte não consiga ser exibida */
    font-weigth funciona como um negrito regulado (regula e expessura da fonte)*/
 
 #titulo {
+    text-align: center;
+    padding-top: 2px;
     color: azure;
     height: 65px;
     width: 2000px;
     background-color: rgba(0, 0, 0, 0.562);
-    position: fixed;
+    position: sticky;
+    top: 0px;
+    right: 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -23,8 +28,8 @@ ela funciona caso a primeira fonte não consiga ser exibida */
     background-image: url('../Imagens/arara\ encarando.jpg');
     margin-top: auto;
     margin-left: auto;
-    margin-right: 100px;
-    margin-bottom: 30px;
+    position: relative;
+    bottom: 300px;
     width: 600px;
     height: 400px;
 }
