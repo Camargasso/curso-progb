@@ -139,6 +139,7 @@ no eixo Y  */
 }
 
 #Características {
+    border: 1px solid blanchedalmond;
     color: aliceblue;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 300px;
