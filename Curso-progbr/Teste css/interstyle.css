@@ -73,3 +73,28 @@ para a direita, permitindo que os outros elementos possam organizar em torno del
     transform: translate(-50%, -50% );
     background-color: darkkhaki;
 }
+
+.box1{
+    position: relative;
+    top: 500px;
+    background-color: gray;
+    margin: auto;
+    width: 80%;
+    height: 100px;
+    
+}
+
+.box2{
+    position: absolute;
+    /* margin: auto; */
+    width: 70%;
+    height: 70%;
+    background-color: brown;
+    top: 50%;
+    left: 50%;
+
+    transform:translate(-50%, -50%) ;
+    color: aliceblue;
+    text-align: center;
+    font-size: 6vw;
+}
