@@ -18,7 +18,7 @@ console.log(b);
 
 // Boolean vai ser true / False
 
-a = 10                   
+a = 10                    
 b = 15
 c = a * b
 console.log(c)
@@ -34,3 +34,18 @@ console.log(b)
 a = 30
 a +=5
 console.log(a)
+
+a = 5
+b = 5
+
+console.log( a == b)
+
+// O simbolo igual usado trez vezes compara o valor e tipo como exemplo number e text 
+// != não é igual 
+// < maior que 
+// > menor que 
+
+a = 7   
+b = 5
+
+console.log( a > b)
