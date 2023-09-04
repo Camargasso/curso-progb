@@ -45,7 +45,43 @@ console.log( a == b)
 // < maior que 
 // > menor que 
 
-a = 7   
+a = 7       
 b = 5
 
 console.log( a > b)
+
+var idade = 35
+var maior20 = idade > 20
+var menor30 = idade < 30
+var entre = maior20 && menor30
+// Na var entre se um dos dois ou os dois forem falso então a variável será falsa
+console.log( maior20 )
+console.log( menor30 )
+console.log(entre)
+
+var idade = 20
+var maior20 = idade >= 20
+var menor30 = idade <= 30
+var entre = maior20 && menor30
+console.log(entre)
+
+
+var idade = 8
+var menor10 = idade <= 10
+var maior65 = idade >= 65
+var gratuidade = menor10 || maior65
+console.log(gratuidade)
+
+var idade = 35
+var maior20 = idade >= 20
+var menor20 = !maior20 /*Com a exclamação o código maior que 20 foi negado */ 
+console.log(maior20)
+console.log(menor20)
+
+
+
+const larguraTela = window.innerWidth;
+const alturaTela = window.innerHeight;
+console.log(`Resolução da tela: ${larguraTela} x ${alturaTela}`);
+
+alert(`Resolução da tela: ${larguraTela} x ${alturaTela}`)
