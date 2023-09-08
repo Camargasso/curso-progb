@@ -157,7 +157,7 @@ switch (conceito) {
     case 'Bom':
         console.log('Você esta quase perfeito')
         break;
-    case 'Regular': 
+    case 'Regular':
         console.log('Estude mais um pouco')
         break;
     default:
@@ -171,21 +171,50 @@ var numero = 5
 for (var i = 0; i < numero; i++) {
     console.log('Executando o for, pela  ' + i + 'Vez')
 }
-console.log('Acabou')   
+console.log('Acabou')
 
 
 var numero = 5
-while(numero < 10){
-console.log('Número' + numero)
-numero++
+while (numero < 10) {
+    console.log('Número' + numero)
+    numero++
 }
 console.log('Acabou')
 
 
 var numero = Math.random() * 100
 console.log(numero)
-while(numero < 90){
+while (numero < 90) {
     var numero = Math.random() * 100
 }
 console.log(numero)
 console.log('Acabou')
+
+//Arrays
+var alunos = new Array('Igor', 'José', 'Marcos', 'Mariana') /*e possível criar um array com [] no lugar 
+de ()*/
+console.log(alunos)
+
+/*se quisermos imprimir apenas um aluno utilizamos o numero da posição dentro de colchetes no
+console*/
+var alunos = new Array('Igor', 'José', 'Marcos', 'Mariana')
+console.log(alunos[0])
+
+
+var alunos = ['Igor','José','Marcos','Mariana','Joana','Leo']
+for(var i = 0; i < alunos.length; i++) {
+    console.log(alunos[i])
+}
+
+
+//Vai imprimir o index de cada elemento dentro do array 
+var alunos = ['Igor', 'José', 'Marcos', 'Mariana', 'Joana', 'Leo']
+for(var i in alunos) {
+    console.log(i)
+}
+
+//Vai imprimir o valor de cada elemento dentro do array 
+var alunos = ['Igor', 'José', 'Marcos', 'Mariana', 'Joana', 'Leo']
+for(var aluno of alunos) {
+    console.log(aluno)
+}
