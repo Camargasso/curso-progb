@@ -81,7 +81,7 @@ var str = 'Valor "texto entre aspas" qualquer' /*Pode ser usado aspas simples ou
 str += ' outro texto'
 console.log(str)
 
-var a = '3.5'  /*Para transformar text em number parsefloat para numeros quebrados e parseint para numeros sem decimais*/
+var a = '3.5'  /*Para transformar text em nber parsefloat para numeros quebrados e parseint para numeros sem decimais*/
 var b = '6'
 var c = parseFloat(a) + parseInt(b)
 console.log(c)
@@ -200,21 +200,78 @@ console*/
 var alunos = new Array('Igor', 'José', 'Marcos', 'Mariana')
 console.log(alunos[0])
 
-
-var alunos = ['Igor','José','Marcos','Mariana','Joana','Leo']
-for(var i = 0; i < alunos.length; i++) {
+//O tamanho do array se chama length como no exemplo abaixo o length seria de 6 
+var alunos = ['Igor', 'José', 'Marcos', 'Mariana', 'Joana', 'Leo']
+for (var i = 0; i < alunos.length; i++) {
+    /*var i = 0 marca o início de onde o for começa, i < alunos.length se i for menor que length então ele vai imprimir e i++ é oque 
+    vai fazer a var ir aumentando*/
     console.log(alunos[i])
 }
 
-
 //Vai imprimir o index de cada elemento dentro do array 
 var alunos = ['Igor', 'José', 'Marcos', 'Mariana', 'Joana', 'Leo']
-for(var i in alunos) {
+for (var i in alunos) {
     console.log(i)
 }
 
 //Vai imprimir o valor de cada elemento dentro do array 
 var alunos = ['Igor', 'José', 'Marcos', 'Mariana', 'Joana', 'Leo']
-for(var aluno of alunos) {
+for (var aluno of alunos) {
     console.log(aluno)
 }
+
+
+//Funções 
+
+function med(n1, n2) {
+    var nota1 = n1
+    var nota2 = n2
+    var media = (nota1 + nota2) / 2
+    console.log(media)
+}
+
+med(6, 7)
+med(8, 9)
+
+
+function med2(n1, n2) {
+    var nota1 = n1
+    var nota2 = n2
+    var media = (nota1 + nota2) / 2
+    // console.log(media)
+    return media /*o return faz a function retornar a média na própria var resultado*/
+}
+
+var resultado1  = med2(6, 7) 
+var resutlado2 = med2(8, 9)
+console.log (resultado1 + ' E ' + resutlado2)
+
+
+//Função pt2--------------------------------------------------------------------------------------------------------
+function saudacao(){
+    return 'Olá mundo'
+}
+
+var s = saudacao()
+console.log(s)
+
+//exemplo 2----------------------------------------------------------
+function med3(n1, n2) {
+    var nota1 = n1
+    var nota2 = n2
+    var media = (nota1 + nota2) / 2
+    return media 
+}
+
+var resultado1  = med3(6, 7) 
+console.log (resultado1)
+
+var m = med3 /*nesse caso transformamos a função em uma var*/
+var resultado2 = m(2,3)
+console.log(resultado2)
+
+//exemplo 3-----------------------------------------------------------
+var med4 = (n4,n5) => {/*neste exemplo a função esta dentro de uma var e não é necessário o termo function pois estamos utilizando a =>*/ 
+    return(n4 + n5) /2
+}
+console.log(med4(8,7))
