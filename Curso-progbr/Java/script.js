@@ -375,3 +375,6 @@ console.log(aluno.media())
 console.log(aluno1) 
 console.log(aluno1.media())
 
+
+//Objeto - construtores------------------------------------------------------------------------------------------
+
