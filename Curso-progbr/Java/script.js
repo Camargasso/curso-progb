@@ -1,5 +1,6 @@
 // // alert("Hello word")
 // console.log("Olá Mundo");
+// console.log() é o comando dado para você imprimir algo na tela
 a = "Placa de captura";
 b = "erro";
 var b = a;
@@ -242,13 +243,13 @@ function med2(n1, n2) {
     return media /*o return faz a function retornar a média na própria var resultado*/
 }
 
-var resultado1  = med2(6, 7) 
+var resultado1 = med2(6, 7)
 var resutlado2 = med2(8, 9)
-console.log (resultado1 + ' E ' + resutlado2)
+console.log(resultado1 + ' E ' + resutlado2)
 
 
 //Função pt2--------------------------------------------------------------------------------------------------------
-function saudacao(){
+function saudacao() {
     return 'Olá mundo'
 }
 
@@ -260,18 +261,117 @@ function med3(n1, n2) {
     var nota1 = n1
     var nota2 = n2
     var media = (nota1 + nota2) / 2
-    return media 
+    return media /*recebe n1 e n2 e retorna a var media*/
 }
 
-var resultado1  = med3(6, 7) 
-console.log (resultado1)
+var resultado1 = med3(6, 7)
+console.log(resultado1)
 
 var m = med3 /*nesse caso transformamos a função em uma var*/
-var resultado2 = m(2,3)
+var resultado2 = m(2, 3)
 console.log(resultado2)
 
 //exemplo 3-----------------------------------------------------------
-var med4 = (n4,n5) => {/*neste exemplo a função esta dentro de uma var e não é necessário o termo function pois estamos utilizando a =>*/ 
-    return(n4 + n5) /2
+var med4 = (n4, n5) => {/*neste exemplo a função esta dentro de uma var e não é necessário o termo function pois estamos utilizando a =>*/
+    return (n4 + n5) / 2
 }
-console.log(med4(8,7))
+console.log(med4(8, 7))
+
+
+//Objeto-------------------------------------------------------------------------------------------
+// O objeto é aberto com {}, sempre vem acompanhado por uma chave seguido de um valor  
+var aluno = { nome: 'João', nota1: '7.5' }
+console.log(aluno.nota1)
+//-----------------------------------------------------
+var aluno = {
+    nome: 'João',
+    notas: [7.5, 5.0] /*nota se tornou um array*/
+}
+
+aluno.matricula = 383 /*pode receber uma propriedade mesmo após ser criado chamando a váriavel com um . inserindo a propriedade
+a ser adicionado*/
+aluno['sobrenome'] = 'Oliveira' /*outra maneira de inserir uma propriedade*/
+// console.log(aluno.notas[1])  <--neste ex. selecionamos a nota a ser imprimida no array dentro do obj
+console.log(aluno)
+
+//Outra maneira de criar um objt
+var aluno = new Object()
+aluno.nome = 'Igor'
+aluno.notas = [8, 9]
+console.log(aluno)
+
+
+//Objeto - Métodos--------------------------------------------------------------------------------------------
+// Os métodos são funções dos objt
+var aluno = {
+    nome: 'Daniel',
+    notas: [5, 8],
+
+    media: function (n1, n2) {
+        return (n1 + n2) / 2
+    }
+}
+
+console.log(aluno)
+console.log(aluno.media(aluno.notas[0], aluno.notas[1]))
+
+// Exemplo. 2 (solução para otimizar a função e aplicala aos dois alunos)-------------------------------------------------
+function calcmedia(n1, n2) {
+    return (n1 + n2) / 2
+}
+
+var aluno = {
+    nome: 'Igor',
+    notas: [6, 8],
+    media: calcmedia
+}
+
+var aluno1 = {
+    nome: 'João',
+    notas: [10, 9],
+    media: calcmedia
+}
+
+console.log(aluno)
+console.log(aluno.media(aluno.notas[0], aluno.notas[1]))
+
+console.log(aluno1)
+console.log(aluno1.media(aluno1.notas[0], aluno1.notas[1]))
+
+//Exemplo. 3 (solução para otimizar o console)-------------------------------------------------
+
+/*Se a função for chamada como método de um objeto, this se refere a esse objeto*/
+var aluno = {
+    nome: 'Leandro',
+    notas: [8, 8],
+    media: function (n1, n2) {
+        return (this.notas[0] + this.notas[1]) / 2 /* no exemplo this se refere a prop notas e notas é um array*/
+    }
+}
+console.log(aluno)
+console.log(aluno.media())
+
+
+//Exemplo 4 (juntando o this e função isolada para aplica-la aos dois alunos ao mesmo tempo)--------------------
+function calcmedia(n1, n2) {
+    return (this.notas[0] + this.notas[1]) / 2
+}
+
+var aluno = {
+    nome: 'Igor',
+    notas: [6, 8],
+    media: calcmedia
+}
+
+var aluno1 = {
+    nome: 'João',
+    notas: [10, 9],
+    media: calcmedia
+}
+
+console.log(aluno)
+console.log(aluno.media())
+
+console.log(aluno1) 
+console.log(aluno1.media())
+
