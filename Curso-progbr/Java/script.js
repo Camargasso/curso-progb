@@ -372,9 +372,54 @@ var aluno1 = {
 console.log(aluno)
 console.log(aluno.media())
 
-console.log(aluno1) 
+console.log(aluno1)
 console.log(aluno1.media())
 
 
 //Objeto - construtores------------------------------------------------------------------------------------------
+
+function criarAluno(nome, n1, n2) {
+    return {
+        nome: nome,
+        nota1: n1,
+        nota2: n2,
+        media: function () {
+            return (this.nota1 + this.nota2) / 2
+        }
+    }
+}
+
+var turma = [
+    criarAluno('Igor', 9, 6),
+    criarAluno('Joao', 7, 4),
+    criarAluno('Marcela', 8, 7.5)
+]
+
+// var aluno = turma[0]
+// console.log(aluno)
+// console.log(aluno.media())
+
+turma.forEach(function (elemento) {
+    console.log(elemento)             /*o forEach faz uma varredura no array turma e consegue imprimir os elementos*/
+    console.log(elemento.media())
+})
+
+
+//Exemplo 2.---------------------------------------------------------------------------------------------------------------
+
+function alunox(nome, n1, n2) {
+    this.nome = nome
+    this.nota1 = n1
+    this.nota2 = n2
+
+    this.media = function () {
+        return (this.nota1 + this.nota2) / 2
+    }
+}
+
+var a = new alunox('Igor', 8, 7)
+console.log(a)
+console.log(a.media())
+
+
 
