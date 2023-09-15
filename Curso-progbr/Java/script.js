@@ -421,5 +421,35 @@ var a = new alunox('Igor', 8, 7)
 console.log(a)
 console.log(a.media())
 
+    
+//Objetos (resumo)--------------------------------------------------------------------------------------------------------
+/* Pode se colocar um objeto dentro de uma variável abrindo as chaves{} 
+ var b ={} */
+
+/*Criar um objeto pela função 
+function obj( receber x ){
+return{ vai retornar 2+x}
+}
+
+var b = obj( 7 )
+console.log(b) */
+
+/*Criar um objeto com this
+
+function obj(n, s){
+    this.nome = n
+    this.sobrenome = s 
+}
+
+var a = newobject(Gabriel, Camargo)
+console.los(a)*/
+
+
+
+
+
+
+
+
 
 
