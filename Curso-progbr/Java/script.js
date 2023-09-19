@@ -445,8 +445,9 @@ var a = newobject(Gabriel, Camargo)
 console.los(a)*/
 
 
-var d = new Date (2018, 08, 12, 22, 45)
-             // ano, mês, dia, hora, minuto...
+//Data-------------------------------------------------------------------------------------------------------------------------
+var d = new Date (/*ano, mês, dia, hora, minuto...*/ 2012, 11, 12, 22, 45)
+            
 console.log(d)
 // quando passamos o mês em formato de número, o mesmo vai corresponder 
 // ao index de um Array de [12] meses onde o 0 = janeiro e 11= dezembro 
@@ -468,6 +469,18 @@ var g = new Date (1234578487)
 console.log(g) /*Para modificar uma prop da data se executa essa função*/
 console.log(g.setDate(11))
 
+//Cons, let e var--------------------------------------------------------------------------------------------------------------
+const numero3 = [4] // a constante não pode ser modificada mas pode ser
+
+numero3.push(7) //para adicionar elementos no array da const, tambem pode ser usado para objeto
+
+console.log(numero3)
+
+let numero5 = 4 
+
+numero5 = 11
+
+console.log(numero5)
 
 
 
