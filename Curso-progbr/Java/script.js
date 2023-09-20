@@ -465,9 +465,9 @@ var f = new Date ('05-15-2021') /*outra variação para criação de uma data*/
 console.log(f.getDate()) /*Para selecionar apenas uma prop da data se executa essa função*/
 console.log(f.getFullYear()) 
 
-var g = new Date (1234578487) 
-console.log(g) /*Para modificar uma prop da data se executa essa função*/
-console.log(g.setDate(11))
+var g = new Date ('02-07-2023') 
+console.log(g.setDate(11))/*Para modificar uma prop da data se executa essa função*/
+console.log(g) //imprimir novamente para atualizar oque foi modificado 
 
 //Cons, let e var--------------------------------------------------------------------------------------------------------------
 const numero3 = [4] // a constante não pode ser modificada mas pode ser
