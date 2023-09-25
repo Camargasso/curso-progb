@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediário</title>
+    <link rel="stylesheet" href="interstyle.css">
+    </linkrel>
+</head>
+
+<body>
+    <div>
+        Aqui estamos estudando a parte display
+    </div>
+    <div>
+        E aqui a história <div style="background-color: burlywood; 
+        width: 500px;">DIV DE DENTRO</div>continua
+    </div>
+    <!-- A div é um display em block por isso seu tamanho pode ser alterado -->
+
+    <p>
+        Aqui eu tenho o início de um paragrafo <span style="background-color: cadetblue;">
+            UM SPAN NO MEIO</span> e o fim do parágrafo.
+    </p>
+    <!-- Já o span quem é um elemento de display (in line) seu tamanho não pode ser modificado  -->
+
+    <p>
+        Aqui eu tenho o início de um paragrafo <span style="background-color: cadetblue; width:500px; 
+        display:inline-block" ;>UM SPAN NO MEIO</span> e o fim do parágrafo.
+    </p>
+    <!-- O display inline-block ele tem as mesma característicasdo display anterior mas permite que
+    modificamos a altura e largura -->
+
+    <div>
+        <p style="margin: 0;">Este é um parágrafo normal</p>
+        <p style="margin: 0;">Este é outro parágraf o também normal</p>
+    </div>
+
+    <br>
+    <!-- O parágrafo tambem naturalmente é um elemento com display block, porém ele ja tem uma
+    margem padrão -->
+    <div class="quadro">
+        <div class="quadrado quadrado-red"></div>
+        <div class="quadrado quadrado-blue"></div>
+        <div class="quadrado quadrado-green"></div>
+    </div>
+
+    <div id="menu">
+        <ul>
+            <li>Home</li>
+            <li>Contato</li>
+            <li>Links</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <div class="c1">
+            Gabriel Camargo
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="c2">
+            Gabriel Camargo
+        </div>
+    </div>
+
+    <div class="card2">
+        <div>
+            Gabriel Camargo
+        </div>
+    </div>
+
+</body>
+
+</html>
