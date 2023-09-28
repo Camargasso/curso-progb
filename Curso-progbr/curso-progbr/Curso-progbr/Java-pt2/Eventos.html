@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos.pt2</title>
+    <style>
+        img {
+            width: 200px;
+            margin-bottom: 25px;
+        }
+
+        div {
+            display: inline;
+            padding: 10px;
+            font-size: 2rem;
+            background-color: darkgreen;
+            color: white;
+        }
+    </style>
+    <script>
+        function onOver(elemento) { //função para quando estiver com o mouse em cima 
+            elemento.style.backgroundColor = 'grey'
+        }
+        function onOut(elemento) { //função para quando não estiver com o mouse em cima 
+            elemento.style.backgroundColor = 'darkgreen'
+        }
+
+
+        function loaded() { /*função loaded é necessário para o innerHTML identifcar q toda página foi carregada
+            desta maneira aplicando a função*/
+            let t = document.getElementById("titulo")
+           // t.onclick = mudarText adcionando a função fora do objeto
+           t.addEventListener("click", mudarText) //outra maneira de adicionar a função 
+        }                   //click é a propriedade sendo aplicada poderiamos tambem usar mouseover
+        function mudarText(){
+            this.innerHTML = 'Novo texto'
+        }
+
+    </script>
+</head>
+
+<body onload="loaded()"> 
+    <img src="./download.png">
+    <br>
+    <div onmouseover="onOver(this)" onmouseout="onOut(this)">Click</div>
+    <br>
+    <br>
+    <h1 id="titulo">Teste</h1>
+</body>
+
+</html>
