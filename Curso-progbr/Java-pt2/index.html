@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediário</title>
+
+    <style>
+        .paragrafo {
+            color: chocolate;
+        }
+
+        body {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.867);
+        }
+
+        span {
+            display: none;
+        }
+
+        div {
+            display: inline-block;
+            padding: 20px;
+            background-color: brown;
+            color: white;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Título</h1>
+    <p class="paragrafo" id="p1">Parágrafo1<span>Outro texto</span></p>
+
+    <p class="paragrafo">Parágrafo2</p>
+    <p>Parágrafo3</p>
+    <script src="script.js"></script>
+
+    <h1>Testando eventos</h1>
+    <!-- O atributo onclick é usado em HTML para associar uma função JavaScript a um evento de 
+    clique (click) em um elemento HTML -->
+    <h4 onclick="console.log('h1 Foi clicado')">Clique em mim</h4>
+    <h4 onclick="h1click()">Clique em mim</h4>
+    <h4 onclick="this.style.color = 'red'">Clique em mim</h4>
+    <h3>Modifique o texto no campo abaixo</h3>
+    <input type="text" oninput="changeH3(this)">
+    <br>
+    <br>
+    <h3>Texto</h3>
+    <div onclick="hideH3()">
+        <p>Click</p>
+    </div>
+    <h1 onclick="f()">Title</h1>
+
+    <!-- -----------------------------------------Elementos pai e filhos----------------------------------------------------   -->
+    <div id="d1">
+        <h1>Título</h1>
+        <p>Qualquer texto</p>
+    </div>
+
+    <div id="d2">
+        <h1>Título2</h1>
+        <p>Qualquer texto2</p>
+    </div>
+    <br>
+    <h1 id="nome"></h1>
+    <input type="text" oninput="atualizar(this)">
+
+</body>
+
+</html>

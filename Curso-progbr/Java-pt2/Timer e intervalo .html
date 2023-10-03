@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function mudarCor() {
+            let h = document.getElementsByTagName("h1")[0]
+            h.style.color = "blue"
+        }
+        function mudarTexto() {
+            let h = document.getElementsByTagName("h1")[0]
+            h.innerHTML = "Novo título"
+            //timer é quando queremos executar algum código porem com um certo de delay entre o disparo
+            //e a execução
+            setTimeout(mudarCor, 1000) //exemplo de timer 
+        }
+
+        
+        var numero = 0
+        var timer 
+        function atualizarTexto() {
+            let g = document.getElementsByTagName("h1")[1]
+            g.innerHTML += " " + numero
+            numero++
+        }
+        function iniciar() {
+            timer = setInterval(atualizarTexto, 1000) //outro exemplo de timer 
+        }
+
+        function parar(){
+            //clearInterval(interval) função para definir qal intervalo iremos parar 
+            clearTimeout (timer) // outro exemplo porem ele ja interrompe antes do settInterval continuar executando
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Título</h1>
+    <input onclick="mudarTexto()" type="submit" value="Mudar">
+
+    <h1>Teste 2</h1>
+    <input onclick="iniciar()" type="submit" value="Iniciar">
+    <input onclick="parar()" type="submit" value="Parar">
+</body>
+
+</html>
