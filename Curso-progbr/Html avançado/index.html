@@ -7,28 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #container{
+        #container {
             position: relative;
             width: 640px;
             height: 360px;
+            
         }
-        .video{
+
+        .video {
             width: 100%;
         }
-        .controle{
+
+        .controle {
             position: absolute;
             width: 100%;
             height: 100%;
             top: 0;
             text-align: center;
         }
-        .btn{
+
+        .btn {
             position: relative;
             width: 107px;
             top: 100%;
             transform: translateY(-100%);
         }
-
     </style>
 </head>
 
@@ -39,12 +42,13 @@
 
     </ul>
     <video controls autoplay loop width="540" src="./Mídia/Vídeo do WhatsApp de 2023-10-05 à(s) 19.43.29_08842bcd.mp4"
-    poster="../Html e css/Imagens/background.jpg"></video>
+        poster="../Html e css/Imagens/background.jpg"></video>
     <!-- Para o autoplay funcionar é necessário declarar o atributo muted -->
-    
+
     <div id="container">
-        <video id="video1" class="video" src="./Mídia/Vídeo do WhatsApp de 2023-10-05 à(s) 19.43.29_08842bcd.mp4"></video>
-        <div class="controle"> 
+        <video id="video1" class="video"
+            src="./Mídia/Vídeo do WhatsApp de 2023-10-05 à(s) 19.43.29_08842bcd.mp4"></video>
+        <div class="controle">
             <img class="btn" onclick="play()" src="./Mídia/play.png">
         </div>
     </div>
