@@ -11,7 +11,7 @@
             position: relative;
             width: 640px;
             height: 360px;
-            
+
         }
 
         .video {
@@ -32,6 +32,23 @@
             top: 100%;
             transform: translateY(-100%);
         }
+
+        .tela{
+            background-color: bisque;
+            width: 500px;
+            height: 500px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .quadrado{
+            background-color: red;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
     </style>
 </head>
 
@@ -51,6 +68,16 @@
         <div class="controle">
             <img class="btn" onclick="play()" src="./Mídia/play.png">
         </div>
+    </div>
+
+    <!--Aula aúdio------------------------------------------------------------------------------------->
+    <audio controls>
+        <source src="./Mídia/gordin.opus" type="audio/ogg"> <!--ogg tipo de áudio utilizado -->
+    </audio>
+
+
+    <div class="tela">
+<div  id="jogador" class="quadrado"></div>
     </div>
     <script src="script.js"></script>
 </body>
