@@ -7,7 +7,8 @@
     <title>Teste</title>
     <style>
         #tela,
-        #tela2 {
+        #tela2,
+        #tela3 {
             background-color: beige;
         }
     </style>
@@ -20,12 +21,24 @@
     <script>
         let tela = document.getElementById("tela")
         let ctx = tela.getContext("2d")
-        ctx.moveTo(0, 0)
+        ctx.moveTo(0, 0) ///determina o início da linha 
         ctx.lineTo(250, 250)
         ctx.lineTo(500, 0)
         ctx.lineWidth = 5
         ctx.strokeStyle = "brown"
         ctx.stroke()
+
+        ctx.beginPath()
+
+        ctx.lineWidth = 7
+        ctx.strokeStyle = "black"
+        ctx.fillStyle = "white"
+        ctx.moveTo(50, 10)
+        ctx.lineTo(300, 300)
+        ctx.lineTo(200, 300)
+        ctx.closePath() //Atributo que fecha o caminho da linha 
+        ctx.stroke()
+        ctx.fill()
     </script>
     <br>
     <br>
@@ -49,7 +62,30 @@
         ctx2.fill()
         ctx2.stroke()  //aqui criamos um ret mesclando as duas técnicas
 
-ctx2.clearRect(20, 20, 30, 30)
+        ctx2.clearRect(20, 20, 30, 30)
+    </script>
+
+
+
+    <canvas id="tela3" width="500px" height="500px">
+
+    </canvas>
+    <script>
+        let tela3 = document.getElementById("tela3")
+        let cpx = tela3.getContext("2d")
+
+        let x = 250
+        let y = 250
+        let raio = 100
+        let inicio = 0
+        let fim = 1.5 * Math.PI
+
+        cpx.beginPath()
+        cpx.strokeStyle = "blue"
+        cpx.fillStyle = "white"
+        cpx.arc(x, y, raio, inicio, fim)
+        cpx.fill()
+        cpx.stroke()
     </script>
 </body>
 
