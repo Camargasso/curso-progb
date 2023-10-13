@@ -1,0 +1,23 @@
+p::first-line{          /*Pseudo elemento para estilizar somente uma linha*/
+color:burlywood
+}
+
+h1::first-letter{
+    color: brown;
+    font-size: 4rem;
+}
+
+li{
+    list-style: none;
+}
+
+li::before{
+content: "I";
+color: burlywood;
+font-size: 23px;
+}
+
+p::selection{
+    background-color: burlywood;
+    color: darkred;
+}
