@@ -8,7 +8,7 @@
     <style>
         #tela,
         #tela2,
-        #tela3 {
+        #tela4 {
             background-color: beige;
         }
     </style>
@@ -74,19 +74,62 @@
         let tela3 = document.getElementById("tela3")
         let cpx = tela3.getContext("2d")
 
-        let x = 250
-        let y = 250
-        let raio = 100
-        let inicio = 0
-        let fim = 1.5 * Math.PI
 
-        cpx.beginPath()
-        cpx.strokeStyle = "blue"
-        cpx.fillStyle = "white"
-        cpx.arc(x, y, raio, inicio, fim)
-        cpx.fill()
-        cpx.stroke()
+
+        let circle = {
+            x: 250,
+            y: 250,             //atributos para desenhar circle 
+            raio: 100,
+            inicio: 0,
+            fim: 0,
+        }
+
+        function drawCircle(c) {
+            cpx.beginPath()
+            cpx.rect(0, 0, 500, 500)
+            cpx.fillStyle = "beige"
+            cpx.fill()
+
+            cpx.beginPath()
+            cpx.strokeStyle = "blue"      //criamos a função para desenhar circle 
+            cpx.fillStyle = "white"
+            cpx.arc(c.x, c.y, c.raio, c.inicio, c.fim)
+            cpx.fill()
+            cpx.stroke()
+        }
+
+
+        setInterval(function () {
+            if (circle.fim < 2 * Math.PI) {
+                circle.fim += 0.3
+                circle.x += 3
+            }
+            drawCircle(circle)  //função chamando atributos da let circle 
+        }, 40)
     </script>
+
+
+
+    <!-- Imagens no canva---------------------------------------------------------- -->
+    <canvas id="tela4" width="500" height="500">
+
+        <script>
+            let tela4 = document.getElementById("tela4")
+
+            let pcc = tela4.getContext("2d")
+
+            let img = new Image()
+            img.src = "./Mídia/pinguim.png"
+            img.onload = desenharImg
+            
+            function desenharImg() {
+
+                pcc.drawImage(this, 20, 20, this.naturalWidth / 2, this.naturalHeight / 2)
+            }
+        </script>
+
+
+
 </body>
 
 </html>

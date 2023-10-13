@@ -46,3 +46,5 @@ jogador.style.left = posY
 setInterval (function(){
 // moverJogadorPara(xInicial++, yInicial++) descomentar para ativar essa função(teste com animação)
 }, 27)
+
+
