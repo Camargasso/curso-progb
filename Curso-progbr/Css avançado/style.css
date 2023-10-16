@@ -10,6 +10,7 @@
 }
 
 #divola li {
+    color: var(--var-color);
     list-style: none;
 }
 
@@ -31,7 +32,7 @@
 }
 
 /* Tambem utilizando o seletor + aplicamos o css para oque vem posteriormente indicado como exemplo 
-#seletores + p aplicaria o css no paragráfo seguinte da div  */
+#seletores + p aplicaria o css no paragráfo seguinte da div */
 
 /*Utilizando o ~ aplicamos o css para todos os itens posteriormente indicado, ex:
 #seletores ~ p aplicaria o css para todos os páragrafos que sucedem o id*/
@@ -54,6 +55,12 @@
     color: white;
 }
 
-#pseudo-classes li:nth-of-type(even){ /*e even os elementos pares*/
+#pseudo-classes li:nth-of-type(even){ /*even os elementos pares*/
     background-color: burlywood;
 }
+
+:root{
+    --var-color: aqua; /*criada uma var para aplicar o css nos demais atribútos*/
+}
+
+
