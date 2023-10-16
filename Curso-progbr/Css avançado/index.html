@@ -9,16 +9,49 @@
 </head>
 
 <body>
-    <h1>Título</h1>
-    <p>Um texto qualquer Um texto qualquer Um texto qualquer Um texto qualquer Um texto qualquer Um texto qualquer
-        <br>
-        Um texto qualquer Um texto qualquer Um texto qualquer Um texto qualquer
-    </p>
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ul>
+    <div id="divola">
+        <h1>Título</h1>
+        <p>Um texto qualquer Um texto qualquer Um texto qualquer Um texto qualquer Um texto qualquer Um texto qualquer
+            <br>
+            Um texto qualquer Um texto qualquer Um texto qualquer Um texto qualquer
+        </p>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+
+    <div id="seletores">
+        <h1 title="titulo">Título 1</h1>
+        <h2>Título 2</h2>
+        <h3 title="titulo">Título 3</h3>
+
+        <p>Parágrafo 1</p>
+        <p>Parágrafo 2</p>
+        <p>Parágrafo 3</p>
+        <section>
+            <p>Parágrafo 4</p>
+            <p>Parágrafo 5</p>
+        </section>
+    </div>
+
+    <script>
+        let titulos = document.querySelectorAll("[title*=tu]")
+        console.log(titulos) //com os seletores conseguimos selecionar apenas os títulos que contém tu
+    </script>
+    <div id="pseudo-classes">
+        <input type="text"> <input type="text">
+
+<ul>
+    <li>Opção 1</li>
+    <li>Opção 2</li>
+    <li>Opção 3</li>
+    <li>Opção 4</li>
+    <li>Opção 5</li>
+</ul>
+    
+    </div>
 </body>
 
 </html>

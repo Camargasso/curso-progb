@@ -1,23 +1,59 @@
-p::first-line{          /*Pseudo elemento para estilizar somente uma linha*/
-color:burlywood
+#divola p::first-line {
+    /*Pseudo elemento para estilizar somente uma linha*/
+    color: burlywood
+        /*Pseudo elemento sempre vai aparecere duas vezes o dois pontos*/
 }
 
-h1::first-letter{
+#divola h1::first-letter {
     color: brown;
     font-size: 4rem;
 }
 
-li{
+#divola li {
     list-style: none;
 }
 
-li::before{
-content: "I";
-color: burlywood;
-font-size: 23px;
+#divola li::before {
+    content: "I";
+    color: burlywood;
+    font-size: 23px;
 }
 
-p::selection{
+#divola p::selection {
     background-color: burlywood;
     color: darkred;
+}
+
+#seletores>p {
+    /*Nesse exemplo o css só se aplica no q a div é diretamente pai de p, pelo seletor >*/
+    background-color: brown;
+    color: white;
+}
+
+/* Tambem utilizando o seletor + aplicamos o css para oque vem posteriormente indicado como exemplo 
+#seletores + p aplicaria o css no paragráfo seguinte da div  */
+
+/*Utilizando o ~ aplicamos o css para todos os itens posteriormente indicado, ex:
+#seletores ~ p aplicaria o css para todos os páragrafos que sucedem o id*/
+
+/* ~= seletor para oque for no início 
+   *= seletor para oque contem dentro do atributo 
+   $= seletor para oque for no final */
+
+#pseudo-classes input:focus {
+    color: brown;
+    /*exemplo de pseudo classe utilizando o focus a cor se aplica apenas no  elemento        
+      em uso (a pseudo classe sempre é utilizada apenas com : uma vez*/
+}
+#pseudo-classes li{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#pseudo-classes li:nth-of-type(odd){ /*odd seleciona os elementos impares*/
+    background-color: rgb(49, 25, 25);
+    color: white;
+}
+
+#pseudo-classes li:nth-of-type(even){ /*e even os elementos pares*/
+    background-color: burlywood;
 }
