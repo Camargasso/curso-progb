@@ -9,9 +9,17 @@
         .container{
             color: white;
             display: grid;
+            padding: 10px;
+            background-color: gray;
 
-            grid-template-rows: auto auto;
-            grid-template-columns: auto auto auto;
+            grid-template-rows: 100px 100px ;
+            grid-template-columns: 1fr 2fr 1fr;
+            /* grid-template:auto auto / 10% auto auto; ; para ter o mesmo efeito dos atributos acima divindo as propriedades com uma "/" */
+            /* grid-row-gap: 10px; para aplicar um gap só as linhas ou column para aplicar só as colunas */
+            grid-gap: 10px;
+            /* justify-items: modifica o posicionamento dos itens da grid; na horizontal */
+            /* alling-items: modifica o posicionamento dos itens da grid; na vertical */
+            align-items: flex-start;
         }
         .r1{
             background-color: red;
@@ -23,8 +31,8 @@
             background-color: green;
         }
         .rect{
-            /* width: 100px;
-            height: 100px; */
+            /* width: 100px; */
+            height: 100px;
         }
     </style>
 </head>
