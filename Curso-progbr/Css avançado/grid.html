@@ -1,50 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid</title>
     <style>
-        .container{
+        .container {
             color: white;
             display: grid;
             padding: 10px;
             background-color: gray;
 
-            grid-template-rows: 100px 100px ;
+            grid-template-rows: 100px 100px;
             grid-template-columns: 1fr 2fr 1fr;
-            /* grid-template:auto auto / 10% auto auto; ; para ter o mesmo efeito dos atributos acima divindo as propriedades com uma "/" */
+            /* grid
+            -template:auto auto / 10% auto auto; ; para ter o mesmo efeito dos atributos acima divindo as propriedades com uma "/" */
             /* grid-row-gap: 10px; para aplicar um gap só as linhas ou column para aplicar só as colunas */
             grid-gap: 10px;
             /* justify-items: modifica o posicionamento dos itens da grid; na horizontal */
             /* alling-items: modifica o posicionamento dos itens da grid; na vertical */
             align-items: flex-start;
+            /* justify e align content fazem o posicionamento do elemento em relação ao container */
         }
-        .r1{
+
+        .r1 {
             background-color: red;
         }
-        .r2{
+
+        .r2 {
             background-color: blue;
         }
-        .r3{
+
+        .r3 {
             background-color: green;
         }
-        .rect{
+
+        .rect {
             /* width: 100px; */
             height: 100px;
         }
+
+        .container2 {
+            color: white;
+            display: grid;
+            padding: 10px;
+            background-color: gray;
+            grid-template-areas: "a2 a2 a2 a2 a2 a2"
+                                 "a1 a1 a3 a3 a3 a3"         /*posicionamento feito através dos seletores*/ 
+                                 "a4 a4 a4 a5 a5 a5"
+                                 "a6 a6 a6 a6 a6 a6";
+                                 
+        } 
+
+        .item1 {
+            grid-area: a1;
+            /* Grid Column -> Row, Start e End  outra maneira de posicionar cada elemento indicando dentro do próprio css*/
+        }
+
+        .item2 {
+            grid-area: a2;
+        }
+
+        .item3 {
+            grid-area: a3;
+        }
+
+        .item4 {
+            grid-area: a4;
+        }
+
+        .item5 {
+            grid-area: a5;
+        }
+
+        .item6 {
+            grid-area: a6;
+        }
     </style>
 </head>
+
 <body>
     <!-- Resolver o desafio do flexbox antes de iniciar estudos da grid -->
     <div class="container">
-    <div class="rect r1">1</div>
-    <div class="rect r2">2</div>
-    <div class="rect r3">3</div>
-    <div class="rect r1">4</div>
-    <div class="rect r2">5</div>
-    <div class="rect r3">6</div>
-</div>
+        <div class="rect r1">1</div>
+        <div class="rect r2">2</div>
+        <div class="rect r3">3</div>
+        <div class="rect r1">4</div>
+        <div class="rect r2">5</div>
+        <div class="rect r3">6</div>
+    </div>
+    <br>
+    <div class="container2">
+        <div class="r1 item1">1</div>
+        <div class="r2 item2">2</div>
+        <div class="r3 item3">3</div>
+        <div class="r1 item4">4</div>
+        <div class="r2 item5">5</div>
+        <div class="r3 item6">6</div>
 </body>
+
 </html>
