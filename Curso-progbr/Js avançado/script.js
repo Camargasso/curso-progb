@@ -73,7 +73,13 @@ function listarUsuarios() {
     console.log(usuarios)
 }
 
-inserirUsuario("Igor").then(listarUsuarios)
+async function executar(){
+    await inserirUsuario("Igor")
+    listarUsuarios()
+
+}
+
+executar()
 
 
 
